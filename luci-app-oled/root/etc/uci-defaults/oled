@@ -16,7 +16,7 @@ EOF
 . /lib/functions/system.sh
 
 case "$(board_name)" in
-hinlink,opc-h69k)
+hinlink,opc-h69k|hlink,h69k)
 	uci_write_config '/dev/i2c-5' 1 1 eth0
 	;;
 esac
